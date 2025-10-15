@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Estilo de controles de formulario — MÁS MARCADOS */
+@layer components {
+  .field-control {
+    @apply w-full rounded-lg
+           border border-slate-400 bg-white text-slate-900
+           px-3 py-2 shadow-sm
+           hover:border-slate-500
+           focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-300;
+  }
+
+  .field-label {
+    @apply block text-sm font-medium text-slate-800 mb-1;
+  }
+
+  .field-hint {
+    @apply text-xs text-slate-500;
+  }
+
+  /* Tarjetas con borde más visible */
+  .card {
+    @apply rounded-2xl border border-slate-300 bg-white p-5;
+  }
+}
